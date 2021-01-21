@@ -1,0 +1,18 @@
+name: TestProject
+
+options:
+  bundleIdPrefix: com.something
+  minimumXcodeGenVersion: 2.18.0
+
+settings:
+  SWIFT_VERSION: 5.0
+  CODE_SIGN_STYLE: "Manual"
+  PROVISIONING_PROFILE_SPECIFIER: "Wildcard Development"
+  DEVELOPMENT_TEAM: "1234567890" # Put a valid development team here
+
+targets:
+  App:
+    type: application
+    platform: iOS
+    deploymentTarget: "13.0"
+    sources: [App]
